@@ -83,14 +83,18 @@
 
 
 
-<meta name="description" content="Do whatever you like!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="lyrain的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="程序类型1、语言：C#2、框架：.NET Framework3、类型：Window窗体应用 程序说明1、主窗口设置或者读取子窗口数据时，通过调用子窗口实例的方法实现的。2、子窗口设置或者读取主窗口数据时，通过将主窗口的方法传递给子窗口实例的委托实现的。 程序代码MainForm代码12345678910111213141516171819202122232425262728293031323334">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C# 主从窗口之间互发消息">
+<meta property="og:url" content="http://yoursite.com/2020/02/14/Csharp%E4%B8%BB%E4%BB%8E%E7%AA%97%E5%8F%A3%E4%B9%8B%E9%97%B4%E4%BA%92%E5%8F%91%E6%B6%88%E6%81%AF/index.html">
 <meta property="og:site_name" content="lyrain的博客">
-<meta property="og:description" content="Do whatever you like!">
+<meta property="og:description" content="程序类型1、语言：C#2、框架：.NET Framework3、类型：Window窗体应用 程序说明1、主窗口设置或者读取子窗口数据时，通过调用子窗口实例的方法实现的。2、子窗口设置或者读取主窗口数据时，通过将主窗口的方法传递给子窗口实例的委托实现的。 程序代码MainForm代码12345678910111213141516171819202122232425262728293031323334">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191215174212519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x5cmFpbjIwMDk=,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2020-02-14T04:39:04.000Z">
+<meta property="article:modified_time" content="2020-02-19T02:33:13.300Z">
 <meta property="article:author" content="lyrain">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20191215174212519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x5cmFpbjIwMDk=,size_16,color_FFFFFF,t_70">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/02/14/Csharp主从窗口之间互发消息/"/>
 
 
 
 
 
-  <title>lyrain的博客</title>
+  <title>C# 主从窗口之间互发消息 | lyrain的博客</title>
   
 
 
@@ -155,8 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -279,9 +282,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -311,9 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/02/14/Csharp%E4%B8%BB%E4%BB%8E%E7%AA%97%E5%8F%A3%E4%B9%8B%E9%97%B4%E4%BA%92%E5%8F%91%E6%B6%88%E6%81%AF/" itemprop="url">C# 主从窗口之间互发消息</a></h1>
+          <h1 class="post-title" itemprop="name headline">C# 主从窗口之间互发消息</h1>
         
 
         <div class="post-meta">
@@ -363,17 +364,13 @@
       
 
       
-        
-          
-            <h1 id="程序类型"><a href="#程序类型" class="headerlink" title="程序类型"></a>程序类型</h1><p>1、语言：<strong>C#</strong><br>2、框架：<strong>.NET Framework</strong><br>3、类型：<strong>Window窗体应用</strong></p>
+        <h1 id="程序类型"><a href="#程序类型" class="headerlink" title="程序类型"></a>程序类型</h1><p>1、语言：<strong>C#</strong><br>2、框架：<strong>.NET Framework</strong><br>3、类型：<strong>Window窗体应用</strong></p>
 <h1 id="程序说明"><a href="#程序说明" class="headerlink" title="程序说明"></a>程序说明</h1><p>1、<strong>主窗口</strong>设置或者读取<strong>子窗口</strong>数据时，通过调用<strong>子窗口</strong>实例的方法实现的。<br>2、<strong>子窗口</strong>设置或者读取<strong>主窗口</strong>数据时，通过将<strong>主窗口</strong>的方法传递给<strong>子窗口</strong>实例的委托实现的。</p>
 <h1 id="程序代码"><a href="#程序代码" class="headerlink" title="程序代码"></a>程序代码</h1><h2 id="MainForm代码"><a href="#MainForm代码" class="headerlink" title="MainForm代码"></a>MainForm代码</h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> System.ComponentModel;</span><br><span class="line"><span class="keyword">using</span> System.Data;</span><br><span class="line"><span class="keyword">using</span> System.Drawing;</span><br><span class="line"><span class="keyword">using</span> System.Linq;</span><br><span class="line"><span class="keyword">using</span> System.Text;</span><br><span class="line"><span class="keyword">using</span> System.Windows.Forms;</span><br><span class="line"><span class="keyword">using</span> System.Media;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">WindowsMessageExchange</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">MainForm</span> : <span class="title">Form</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">private</span> ChildrenForm myChildrenForm = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">MainForm</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetTextValue</span>(<span class="params"><span class="keyword">string</span> setStr</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">this</span>.label_ChildrenFormSetValue.Text = setStr;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">string</span>  <span class="title">ReadTextValue</span>(<span class="params"> </span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">return</span>(<span class="keyword">this</span>.richTextBox_MainFormValue.Text);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">EnableOpenChildmrenFormt</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            button_OpenChildrenForm.Enabled=<span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button_OpenChildrenForm_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            myChildrenForm = ChildrenForm.CreateInstance();<span class="comment">//实例化子窗口</span></span><br><span class="line">            myChildrenForm.ReadMainFormTextDelegate = <span class="keyword">this</span>.ReadTextValue;<span class="comment">//设置子窗口委托，用来读取主窗口值</span></span><br><span class="line">            myChildrenForm.SetMainFormTextDelegate = <span class="keyword">this</span>.SetTextValue;<span class="comment">//设置子窗口委托，用来设置主窗口值</span></span><br><span class="line">            myChildrenForm.EnableOpenChildmrenFormtDelegate = <span class="keyword">this</span>.EnableOpenChildmrenFormt;</span><br><span class="line">            <span class="comment">//myChildrenForm.StartPosition = FormStartPosition.CenterParent;</span></span><br><span class="line">            <span class="comment">//myChildrenForm.StartPosition = FormStartPosition.CenterScreen;</span></span><br><span class="line">            myChildrenForm.StartPosition = FormStartPosition.Manual;</span><br><span class="line">            <span class="keyword">int</span> xWidth = SystemInformation.PrimaryMonitorSize.Width;<span class="comment">//获取显示器屏幕宽度</span></span><br><span class="line">            <span class="keyword">int</span> yHeight = SystemInformation.PrimaryMonitorSize.Height;<span class="comment">//获取显示器屏幕高度</span></span><br><span class="line">            <span class="keyword">int</span> formWidth = myChildrenForm.Size.Width;<span class="comment">//获取窗体宽度</span></span><br><span class="line">            <span class="keyword">int</span> formHeight = myChildrenForm.Size.Height;<span class="comment">//获取窗体高度</span></span><br><span class="line">            myChildrenForm.Location = <span class="keyword">new</span> Point((xWidth-formWidth) / <span class="number">2</span>, (yHeight - formHeight) / <span class="number">2</span>);<span class="comment">//居中显示</span></span><br><span class="line">            <span class="comment">//myChildrenForm.ShowDialog();//模态窗口显示</span></span><br><span class="line">            myChildrenForm.Show();<span class="comment">//非模态窗口显示</span></span><br><span class="line">            SystemSounds.Asterisk.Play();<span class="comment">//使用系统提示音</span></span><br><span class="line">            myChildrenForm.Focus();<span class="comment">//聚焦子窗口</span></span><br><span class="line">            <span class="keyword">this</span>.button_OpenChildrenForm.Enabled = <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button_setChildrenFormText_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            myChildrenForm.SetTextValue(<span class="keyword">this</span>.richTextBox_setTextValue.Text);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button_ReadChilerenText_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">this</span>.richTextBox_readValue.Text= myChildrenForm.ReadTextValue();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="ChildrenForm代码"><a href="#ChildrenForm代码" class="headerlink" title="ChildrenForm代码"></a>ChildrenForm代码</h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> System.ComponentModel;</span><br><span class="line"><span class="keyword">using</span> System.Data;</span><br><span class="line"><span class="keyword">using</span> System.Drawing;</span><br><span class="line"><span class="keyword">using</span> System.Linq;</span><br><span class="line"><span class="keyword">using</span> System.Text;</span><br><span class="line"><span class="keyword">using</span> System.Windows.Forms;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">WindowsMessageExchange</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">ChildrenForm</span> : <span class="title">Form</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">delegate</span> <span class="keyword">string</span> <span class="title">ReadMainFormText</span>(<span class="params"></span>)</span>;</span><br><span class="line">        <span class="keyword">public</span> ReadMainFormText ReadMainFormTextDelegate = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">delegate</span> <span class="keyword">void</span> <span class="title">SetMainFormText</span>(<span class="params"><span class="keyword">string</span> setStr</span>)</span>;</span><br><span class="line">        <span class="keyword">public</span> SetMainFormText SetMainFormTextDelegate = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">delegate</span> <span class="keyword">void</span> <span class="title">EnableOpenChildmrenForm</span>(<span class="params"></span>)</span>;</span><br><span class="line">        <span class="keyword">public</span> EnableOpenChildmrenForm EnableOpenChildmrenFormtDelegate = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">static</span> ChildrenForm _instance = <span class="literal">null</span>;</span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> 静态方法，创建单实例</span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ChildrenForm <span class="title">CreateInstance</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (_instance == <span class="literal">null</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                _instance = <span class="keyword">new</span> ChildrenForm();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> _instance;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="title">ChildrenForm</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetTextValue</span>(<span class="params"><span class="keyword">string</span> setStr</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">this</span>.label_MainFormSetValue.Text = setStr;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">string</span> <span class="title">ReadTextValue</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">           <span class="keyword">return</span>( <span class="keyword">this</span>.richTextBox_ChildrenFormValue.Text);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button_setMainFormText_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (SetMainFormTextDelegate != <span class="literal">null</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                SetMainFormTextDelegate(richTextBox_setTextValue.Text);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button_ReadMainFormText_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (ReadMainFormTextDelegate != <span class="literal">null</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                richTextBox_readValue.Text = ReadMainFormTextDelegate();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">ChildrenForm_FormClosed</span>(<span class="params"><span class="keyword">object</span> sender, FormClosedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (EnableOpenChildmrenFormtDelegate != <span class="literal">null</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                EnableOpenChildmrenFormtDelegate();</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> 关闭窗口前，清空实例，让下次可以成功实例化</span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name="sender"&gt;</span><span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name="e"&gt;</span><span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">ChildrenForm_FormClosing</span>(<span class="params"><span class="keyword">object</span> sender, FormClosingEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            _instance = <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="主窗口与子窗口数据对应关系"><a href="#主窗口与子窗口数据对应关系" class="headerlink" title="主窗口与子窗口数据对应关系"></a>主窗口与子窗口数据对应关系</h2><p><img src="https://img-blog.csdnimg.cn/20191215174212519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x5cmFpbjIwMDk=,size_16,color_FFFFFF,t_70" alt="主从窗口数据对应关系"></p>
 <h2 id="程序代码下载链接"><a href="#程序代码下载链接" class="headerlink" title="程序代码下载链接"></a>程序代码下载链接</h2><p>源程序下载地址: <a href="https://download.csdn.net/download/lyrain2009/12034049" target="_blank" rel="noopener">https://download.csdn.net/download/lyrain2009/12034049</a>.</p>
 
-          
-        
       
     </div>
     
@@ -390,144 +387,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/14/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lyrain">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lyrain的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/02/14/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-14T12:39:04+08:00">
-                2020-02-14
-              </time>
+              <a href="/2020/02/14/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -537,10 +418,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -548,6 +430,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -568,8 +454,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -615,6 +510,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#程序类型"><span class="nav-number">1.</span> <span class="nav-text">程序类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#程序说明"><span class="nav-number">2.</span> <span class="nav-text">程序说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#程序代码"><span class="nav-number">3.</span> <span class="nav-text">程序代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MainForm代码"><span class="nav-number">3.1.</span> <span class="nav-text">MainForm代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ChildrenForm代码"><span class="nav-number">3.2.</span> <span class="nav-text">ChildrenForm代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主窗口与子窗口数据对应关系"><span class="nav-number">3.3.</span> <span class="nav-text">主窗口与子窗口数据对应关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程序代码下载链接"><span class="nav-number">3.4.</span> <span class="nav-text">程序代码下载链接</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -749,6 +660,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -821,26 +736,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
